@@ -42,6 +42,11 @@ h1 {
   border-color: var(--teal);
   border-bottom-width: 5px;
 }
+.navigation:hover {
+  color: seashell;
+  border-color: seashell;
+  transition: 1s;
+}
 /* a figure containing a large background and subtext */
 .background-pic {
   display: flex;
@@ -177,13 +182,14 @@ h1 {
 }
 .contact-info {
   display: inline-flex;
-  margin-left: 30px;
+  margin: auto;
   font-size: 35px;
   align-items: center;
+  justify-content: space-evenly;
 }
 .contact-object {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
   border-style: solid;
   border-color: var(--teal);
   border-bottom-width: 10px;
@@ -193,9 +199,65 @@ h1 {
 }
 @media (max-width: 1270px) {
   header {
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  h1 {
+    display: block;
   }
   .nav-list {
     background-color: var(--grey);
+    display: block;
+  }
+  .background-pic {
+    padding-top: 40px;
+  }
+  .about {
+    display: block;
+  }
+  /* setting headings to a column layout */
+  .title-about,
+  .title-project,
+  .title-contact {
+    display: block;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 2em;
+    max-width: 100%;
+    border-right-width: 0px;
+    border-bottom-width: 10px;
+  }
+  .about-p {
+    display: block;
+    font-size: 1.5em;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  /* making projects fit mobile */
+  .project,
+  #project-1 {
+    padding: 3em 1.3em 1.2em 0;
+    max-width: 300px;
+    flex-basis: 200px;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info {
+    padding-top: 1em;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .contact-object {
+    padding: 0.2em 0.2em 0.1em 0.2em;
+    border-bottom-width: 5px;
   }
 }
