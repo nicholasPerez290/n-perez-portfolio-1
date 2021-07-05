@@ -35,12 +35,14 @@ h1 {
   flex-grow: 2;
 }
 .navigation {
+  color: var(--teal);
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
   border-style: solid;
   border-color: var(--teal);
   border-bottom-width: 5px;
+  text-decoration: none;
 }
 .navigation:hover {
   color: seashell;
@@ -138,17 +140,17 @@ h1 {
 /* all background images for projects */
 #project-1 {
   padding: 7em 4.5em 1.5em 0;
-  background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg);
+  background-image: url(http://2.bp.blogspot.com/_Lrw-o6DDrH8/TTO_d_qjznI/AAAAAAAAA3o/7aeFiJRtF0A/s1600/arcreactor.jpg);
   background-size: cover;
   flex-basis: 1100px;
 }
 #project-2 {
-  background-image: url(https://img.freepik.com/free-psd/abstract-background-design_1297-82.jpg?size=626&ext=jpg);
+  background-image: url(https://eurobond-adhesives.co.uk/wp-content/uploads/2020/11/Question-Mark-scaled.jpg);
   background-size: cover;
   flex-basis: 350px;
 }
 #project-3 {
-  background-image: url(https://image.shutterstock.com/mosaic_250/220825799/1778808779/stock-photo-grunge-parquet-floor-with-chevron-pattern-weathered-wood-texture-background-seamless-vintage-1778808779.jpg);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOeUkK_GqGNZYUf2Jah9dsOsIdxLMC2DXfA&usqp=CAU);
   background-size: cover;
   flex-basis: 350px;
 }
@@ -176,13 +178,12 @@ h1 {
   padding: 0.95em;
 }
 .contacts {
-  display: inline-flex;
   margin-top: 15px;
   color: var(--grey);
 }
 .contact-info {
   display: inline-flex;
-  margin: auto;
+  min-width: 80%;
   font-size: 35px;
   align-items: center;
   justify-content: space-evenly;
@@ -196,6 +197,10 @@ h1 {
   padding-bottom: 15px;
   padding-right: 10px;
   padding-left: 10px;
+}
+#linkedin {
+  color: var(--grey);
+  text-decoration: none;
 }
 @media (max-width: 1270px) {
   header {
@@ -260,4 +265,4 @@ h1 {
     padding: 0.2em 0.2em 0.1em 0.2em;
     border-bottom-width: 5px;
   }
-}
+ }
